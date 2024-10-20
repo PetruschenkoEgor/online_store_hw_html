@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .black-stripe{
+        width: 235px;
+        height: 100%;  /* Высота до полного размера */
+        background-color: black;
+        position: absolute;  /* Прижата к краю */
+        border-top-left-radius: 3%;
+        border-bottom-left-radius: 3%;
+      }
+      span{
+        position: absolute;
+        bottom: 0;
+      }
+      .center {
+        text-align: center;
+      }
+      .podsvetka:hover {
+        background: DarkSlateGrey; /* тут цвет*/
+        border-radius: 10px; /* загругление */
+      }
+      .podsvetka_light:hover {
+        background: darkgrey; /* тут цвет*/
+        border-radius: 10px; /* загругление */
+      }
+    </style>
+  </head>
+  <body>
+  <div class="row">
+    <div class="col-2">
+      <div class="black-stripe">
+      <h3 class="text-light mt-4 center">Меню</h3>
+        <div class="container-xxl bg-dark rounded-start high d-flex flex-column justify-content-start mt-4">
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+          <a href="http://localhost:63342/online_store_hw_html/html/main.html?_ijt=obk65ddvmnipkh94g7a84r5sed&_ij_reload=RELOAD_ON_SAVE" class="btn btn-black link-light mt-4 btn-lg podsvetka" role="button">Главная</a>
+          <a href="http://localhost:63342/online_store_hw_html/html/category.html?_ijt=obk65ddvmnipkh94g7a84r5sed&_ij_reload=RELOAD_ON_SAVE" class="btn btn-black link-light btn-lg podsvetka" role="button">Категории</a>
+          <a href="http://localhost:63342/online_store_hw_html/html/category1.html?_ijt=obk65ddvmnipkh94g7a84r5sed&_ij_reload=RELOAD_ON_SAVE" class="btn btn-black link-light btn-lg podsvetka" role="button">Заказы</a>
+          <a href="http://localhost:63342/online_store_hw_html/html/contacts.html?_ijt=8ncmmruk1a1s1mlgmoknmqaah9&_ij_reload=RELOAD_ON_SAVE" class="btn btn-primary link-light mb-3 btn-lg" role="button">Контакты</a>
+        </div>
+        </div>
+        <div style="position:absolute; bottom:0px;">
+          <div style = "margin-left: 10px; ">
+          <div class="dropdown">
+            <button class="btn btn-black dropdown-toggle text-light podsvetka" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Пользователь
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item podsvetka_light" type="button">Профиль</button></li>
+              <li><button class="dropdown-item podsvetka_light" type="button">Выход</button></li>
+            </ul>
+          </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10">
+      <h1 class="center" style="margin-top: 60px;">Контакты</h1>
+    </div>
+      <div class="col-2"></div>
+    <div class="col-5">
+      <div class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2 w-75 border border-3 border-dark-subtle" style="margin-top: 100px; margin-left: 50px;">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Имя</label>
+          <input type="text" class="form-control border border-2 border-dark-subtle" aria-label="Username" aria-describedby="addon-wrapping" style="width: 450px;">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Почта</label>
+          <input type="email" class="form-control border border-2 border-dark-subtle" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+          <textarea class="form-control border border-2 border-dark-subtle" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+        </div>
+    </div>
+    <div class="col-5">
+      <h4 style="margin-top: 120px">Наши контакты</h4>
+      <p style="margin-right: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molit anim id est laborum.</p>
+      <p style="margin-right: 60px;">While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
+    </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+  </script>
+  </body>
+</html>
